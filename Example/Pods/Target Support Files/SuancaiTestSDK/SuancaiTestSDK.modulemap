@@ -1,0 +1,6 @@
+framework module SuancaiTestSDK {
+  umbrella header "SuancaiTestSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
