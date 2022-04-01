@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SuancaiTestSDK_Example' do
+  pod 'SuancaiTestSDK', :path => '../'
+
+  target 'SuancaiTestSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
