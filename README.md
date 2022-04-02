@@ -27,3 +27,9 @@ pod 'SuancaiTestSDK'
 ## License
 
 SuancaiTestSDK is available under the MIT license. See the LICENSE file for more info.
+
+---
+
+* [x] [通过文档，创建并上传 CocoaPods 仓库](https://www.notion.so/iOS-CocoaPods-854f214d1fa64493ae062aa1f2748f14)
+    - 这个阶段的 sdk 是开源的
+* [ ] 

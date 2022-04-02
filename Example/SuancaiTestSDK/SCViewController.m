@@ -7,8 +7,11 @@
 //
 
 #import "SCViewController.h"
+#import <SuancaiTestSDK/SuancaiTestSDK.h>
 
 @interface SCViewController ()
+
+@property (nonatomic,strong) UIButton *button;
 
 @end
 
@@ -18,12 +21,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.button];
+    [self.button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)buttonClick{
+    [SuancaiTestSDK initSDK];
+}
+
+// MARK: - Lazy
+-(UIButton *)button{
+    if (!_button) {
+        _button = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2.0 - 80, 100, 160, 60)];
+        _button.backgroundColor = [UIColor redColor];
+        [_button setTitle:@"点我，求求你了" forState:UIControlStateNormal];
+    }
+    return _button;
 }
 
 @end
