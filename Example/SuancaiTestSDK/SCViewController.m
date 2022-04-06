@@ -7,7 +7,7 @@
 //
 
 #import "SCViewController.h"
-#import <SuancaiTestSDK/SuancaiTestSDK.h>
+#import <TestFramework/TestFramework.h>
 
 @interface SCViewController ()
 

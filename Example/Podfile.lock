@@ -1,16 +1,26 @@
 PODS:
-  - SuancaiTestSDK (0.1.0)
+  - Masonry (1.1.0)
+  - SuancaiTestSDK (0.1.0):
+    - Masonry
+    - SuancaiTestSDK/core (= 0.1.0)
+  - SuancaiTestSDK/core (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - SuancaiTestSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
 
 EXTERNAL SOURCES:
   SuancaiTestSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SuancaiTestSDK: aeb592d801919b3d9f194cfe516ba6c660b383e3
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SuancaiTestSDK: 976ec2431f0ebe1995e673eaa1f119614715f009
 
 PODFILE CHECKSUM: 1fe9428d2c2478647dfb48de3d826f63437a59c1
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

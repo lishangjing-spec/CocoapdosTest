@@ -10,7 +10,8 @@
 #endif
 #endif
 
-#import "SuancaiTestSDK.h"
+#import "SuancaiSDKH.h"
+#import "SuancaiSDKT.h"
 
 FOUNDATION_EXPORT double SuancaiTestSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char SuancaiTestSDKVersionString[];

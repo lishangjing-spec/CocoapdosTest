@@ -30,6 +30,24 @@ SuancaiTestSDK is available under the MIT license. See the LICENSE file for more
 
 ---
 
-* [x] [通过文档，创建并上传 CocoaPods 仓库](https://www.notion.so/iOS-CocoaPods-854f214d1fa64493ae062aa1f2748f14)
-    - 这个阶段的 sdk 是开源的
-* [ ] 
+* [x] [版本：0.1.0， 通过文档，创建并上传 CocoaPods 仓库，以开源的形式发布](https://www.notion.so/iOS-CocoaPods-854f214d1fa64493ae062aa1f2748f14)
+* [x] [学习：创建一个 Framework 静态库](https://gitee.com/Alexander_Li/suancai-test-sdkf)
+* [x] [创建一个壳项目，通过 git submodule 管理所有的Framework](https://gitee.com/Alexander_Li/suancai-dev)
+    * [x] Podfile 编辑
+* [x] 学习：静态库打包
+    * [x] 通过脚本打包: /package.sh
+* [x] 版本：0.1.1，该项目仅依赖 .framework(非壳项目，直接依赖 framework)
+    * [x] 修改 .podspec 文件
+        * [x] Add s.dependency 'Masonry'(*主仓库内容不能为空*)
+        * [x] Remove `s.source_files` (*壳项目没有代码，只有 framework*)
+        * [x] Add `s.default_subspecs = 'core'`(*让code模块为默认pod模块*)
+        * [x] Add `s.subspec 'core' do |sp|
+    s.vendored_frameworks = 'ADSuyiSDK/Classes/core/*.xcframework'
+end`
+(*指定core绑定的framework*)
+* [ ] 剩余未使用配置
+    * [ ] Add `s.static_framework = true`
+    * [ ] Add `s.frameworks = 'UIKit'`
+    * [ ] Add `s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}`
+    * [ ] Add `s.library = 'sqlite3'`
+    * [ ] Add `s.requires_arc = true`
