@@ -38,12 +38,8 @@ SuancaiTestSDK is available under the MIT license. See the LICENSE file for more
     * [x] 通过脚本打包: /package.sh
 * [x] 版本：0.1.1，该项目仅依赖 .framework(非壳项目，直接依赖 framework)
     * [x] 修改 .podspec 文件
-        * [x] Add s.dependency 'Masonry'(*主仓库内容不能为空*)
+        * [x] Add `s.vendored_frameworks = 'SuancaiTestSDK/Classes/core/*.xcframework'`(*添加pod核心*)
         * [x] Remove `s.source_files` (*壳项目没有代码，只有 framework*)
-        * [x] Add `s.default_subspecs = 'core'`(*让code模块为默认pod模块*)
-        * [x] Add `s.subspec 'core' do |sp|
-    s.vendored_frameworks = 'ADSuyiSDK/Classes/core/*.xcframework'
-end`
 (*指定core绑定的framework*)
 * [ ] 剩余未使用配置
     * [ ] Add `s.static_framework = true`

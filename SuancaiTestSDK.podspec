@@ -26,12 +26,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   
-  s.dependency 'Masonry'
-  
-  s.default_subspecs = 'core'
-
-  s.subspec 'core' do |sp|
-      s.vendored_frameworks = 'SuancaiTestSDK/Classes/core/*.xcframework'
-  end
+  s.vendored_frameworks = 'SuancaiTestSDK/Classes/core/*.xcframework'
 
 end
