@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://gitee.com/Alexander_Li/suancai-test-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '酸菜' => '534016847@qq.com' }
-  s.source           = { :git => 'https://gitee.com/Alexander_Li/suancai-test-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lishangjing-spec/CocoapdosTest.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   
