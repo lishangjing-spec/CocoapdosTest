@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = "Suancai Test Demo description"
 
-  s.homepage         = 'https://gitee.com/Alexander_Li/suancai-test-sdk'
+  s.homepage         = 'https://github.com/lishangjing-spec/CocoapdosTest'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '酸菜' => '534016847@qq.com' }
   s.source           = { :git => 'https://github.com/lishangjing-spec/CocoapdosTest.git', :tag => s.version.to_s }
